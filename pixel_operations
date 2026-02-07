@@ -1,0 +1,22 @@
+import cv2 
+
+image = cv2.imread("sample.jpg")
+
+def rescaleFrame(frame,scale = 0.15):
+    width = int(frame.shape[1]* scale)
+    height = int(frame.shape[0]* scale) 
+    dimensions = (width,height)
+    return cv2.resize(frame, dimensions)    
+
+
+resized_image = rescaleFrame(image)
+
+# Accessing Pixels 
+print("Top Left Pixel: ", resized_image[0,0])
+print("Pixel at (100,100):" , resized_image[100,100])
+
+resized_image[0:100,0:100] = [225,225,0]
+
+cv2.imshow("Modified Image", resized_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()      
