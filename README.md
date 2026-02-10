@@ -22,6 +22,11 @@ Day 3:
 - Image slicing and ROI selection
 - Rescaling images with custom functions
 
+Day 4:
+- Understanding BGR vs RGB color spaces
+- Converting images to grayscale
+- Learning why grayscale is used in computer vision
+  
 ---
 
 ## 🧠 Concepts Covered
@@ -31,6 +36,7 @@ Day 3:
 - Pixel access and manipulation
 - Image slicing and Region of Interest (ROI)
 - Rescaling images using custom functions
+  BGR to RBG conversion and gray scale images
 ---
 
 ## 🛠 Technologies Used
