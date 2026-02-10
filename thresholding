@@ -1,0 +1,33 @@
+import cv2
+
+image = cv2.imread("sample.jpg")
+
+def rescaleFrame(frame,scale = 0.15):
+    width = int(frame.shape[1]* scale)
+    height = int(frame.shape[0]* scale) 
+    dimensions = (width,height)
+    return cv2.resize(frame, dimensions)    
+
+
+resized_image = rescaleFrame(image)
+
+# Converting into Gray Scale 
+gray_image = cv2.cvtColor( resized_image , cv2.COLOR_BGR2GRAY)
+
+# Binary Threshold
+_, thresh = cv2.threshold(gray_image,127,255,cv2.THRESH_BINARY)
+
+# Adaptive Threshold
+adaptive = cv2.adaptiveThreshold(gray_image,
+                                 255,
+                                 cv2.ADAPTIVE_THRESH_MEAN_C,
+                                 cv2.THRESH_BINARY,
+                                 11,
+                                 2)
+
+cv2.imshow("Grayscale", gray_image)
+cv2.imshow("Binary Threshold", thresh)
+cv2.imshow("Adaptive Threshold", adaptive)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
