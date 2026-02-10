@@ -26,7 +26,11 @@ Day 4:
 - Understanding BGR vs RGB color spaces
 - Converting images to grayscale
 - Learning why grayscale is used in computer vision
-  
+
+ Day 5:
+- Understanding image noise
+- Applying averaging and Gaussian blur
+- Edge detection using Canny algorithm 
 ---
 
 ## 🧠 Concepts Covered
@@ -36,7 +40,9 @@ Day 4:
 - Pixel access and manipulation
 - Image slicing and Region of Interest (ROI)
 - Rescaling images using custom functions
-  BGR to RBG conversion and gray scale images
+- BGR to RBG conversion and gray scale images
+- Image blurring and edge detection
+  
 ---
 
 ## 🛠 Technologies Used
