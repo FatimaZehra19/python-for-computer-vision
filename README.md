@@ -30,7 +30,12 @@ Day 4:
  Day 5:
 - Understanding image noise
 - Applying averaging and Gaussian blur
-- Edge detection using Canny algorithm 
+- Edge detection using Canny algorithm
+
+Day 6:
+- Understanding image thresholding
+- Binary and adaptive thresholding
+- Separating objects from background
 ---
 
 ## 🧠 Concepts Covered
@@ -42,6 +47,7 @@ Day 4:
 - Rescaling images using custom functions
 - BGR to RBG conversion and gray scale images
 - Image blurring and edge detection
+- image thresholding (binary & adaptive)
   
 ---
 
