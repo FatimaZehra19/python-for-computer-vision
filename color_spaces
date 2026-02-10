@@ -1,0 +1,30 @@
+import cv2
+
+image = cv2.imread("sample.jpg")
+
+def rescaleFrame(frame,scale = 0.15):
+    width = int(frame.shape[1]* scale)
+    height = int(frame.shape[0]* scale) 
+    dimensions = (width,height)
+    return cv2.resize(frame, dimensions)    
+
+
+resized_image = rescaleFrame(image)
+
+# BGR Image 
+cv2.imshow("BGR Image", resized_image)
+
+# Converting into RGB 
+rgb_image = cv2.cvtColor( resized_image , cv2.COLOR_BGR2RGB)
+
+cv2.imshow("RBG Image", rgb_image)
+
+# Converting into Gray Scale 
+gray_image = cv2.cvtColor( resized_image , cv2.COLOR_BGR2GRAY)
+
+cv2.imshow("Gray Scale Image" , gray_image)
+
+print(gray_image.shape)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()

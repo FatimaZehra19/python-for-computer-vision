@@ -1,0 +1,34 @@
+import cv2
+
+image = cv2.imread("sample.jpg")
+
+def rescaleFrame(frame,scale = 0.15):
+    width = int(frame.shape[1]* scale)
+    height = int(frame.shape[0]* scale) 
+    dimensions = (width,height)
+    return cv2.resize(frame, dimensions)    
+
+
+resized_image = rescaleFrame(image)
+
+# Converting into Gray Scale 
+gray_image = cv2.cvtColor( resized_image , cv2.COLOR_BGR2GRAY)
+
+# Average Blurring
+blurred_image = cv2.blur(gray_image,(7,7))
+
+# Gaussian Blurring
+gaussian_blur = cv2.GaussianBlur(gray_image,(7,7),0)
+
+# Edge Detection 
+edges =cv2.Canny(gray_image,125,175)
+
+cv2.imshow("Original",resized_image)
+cv2.imshow("Gray", gray_image)
+cv2.imshow("Average Blur", blurred_image)
+cv2.imshow("Gaussian Blur", gaussian_blur)
+cv2.imshow("Edges", edges)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
