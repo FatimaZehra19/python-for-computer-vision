@@ -36,6 +36,10 @@ Day 6:
 - Understanding image thresholding
 - Binary and adaptive thresholding
 - Separating objects from background
+
+Day 7:
+- Morphological operations for binary image cleaning
+- Erosion, dilation, opening, and closing
 ---
 
 ## 🧠 Concepts Covered
@@ -48,6 +52,7 @@ Day 6:
 - BGR to RBG conversion and gray scale images
 - Image blurring and edge detection
 - image thresholding (binary & adaptive)
+- morphological operations: erosion, dilation, opening, closing
   
 ---
 
