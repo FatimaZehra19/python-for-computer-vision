@@ -40,6 +40,15 @@ Day 6:
 Day 7:
 - Morphological operations for binary image cleaning
 - Erosion, dilation, opening, and closing
+
+Day 8:
+
+- Implemented contour detection using cv2.findContours()
+- Detected object boundaries on binary images
+- Used RETR_EXTERNAL to extract outer contours
+- Applied CHAIN_APPROX_SIMPLE for contour compression
+- Visualized contours using cv2.drawContours()
+- Counted detected objects using len(contours)
 ---
 
 ## 🧠 Concepts Covered
@@ -53,6 +62,8 @@ Day 7:
 - Image blurring and edge detection
 - image thresholding (binary & adaptive)
 - morphological operations: erosion, dilation, opening, closing
+- contour detection with preprocessing (thresholding + morphology)
+
   
 ---
 
@@ -67,6 +78,9 @@ Day 7:
 - read_image.py → Load and display images safely
 - pixel_operations.py → Pixel access, slicing, and modification
 - rescale_image.py → Custom function for resizing images
+- thresholding.py → Global and adaptive thresholding examples
+- morphology.py → Erosion, dilation, opening, and closing operations
+- contours.py → Object boundary detection using findContours()
 
 
 ## 📈 Status
