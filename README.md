@@ -42,13 +42,18 @@ Day 7:
 - Erosion, dilation, opening, and closing
 
 Day 8:
-
 - Implemented contour detection using cv2.findContours()
 - Detected object boundaries on binary images
 - Used RETR_EXTERNAL to extract outer contours
 - Applied CHAIN_APPROX_SIMPLE for contour compression
 - Visualized contours using cv2.drawContours()
 - Counted detected objects using len(contours)
+
+Day 9:
+- Extracted contour features (area and perimeter)
+- Applied area-based filtering to remove small objects
+- Drew bounding rectangles around detected objects
+- Built structured mini object detection pipeline
 ---
 
 ## 🧠 Concepts Covered
@@ -63,6 +68,7 @@ Day 8:
 - image thresholding (binary & adaptive)
 - morphological operations: erosion, dilation, opening, closing
 - contour detection with preprocessing (thresholding + morphology)
+- contour feature extraction (area, perimeter, bounding box)
 
   
 ---
